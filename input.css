@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+nav{
+    z-index: 999;
+}
+
+a.active {
+    color: #7dd87d;
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+.boxes {
+    box-shadow: 0px 5px 17px #aeaeae;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxes:hover {
+    transform: scale(1.04) translateY(-5px);
+}
+ 
+.menu {
+    height: 150px;
+    border-radius: 10px;
+    
+}
+
+#team img {
+    border: 7px solid #7dd87d;
+}
+
+.box2 {
+    border: 2px solid #7dd87d;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.box2:hover {
+    background-color: #7dd87d;
+    transform: scale(1.2);
+}
+
+.boxx {
+    box-shadow: 0px 5px 17px #aeaeae;
+}
+
+.form input {
+    outline: 2px solid #7dd87d;
+    color: black;
+}
+
+.boxx2 img {
+    border-radius: 10px 10px 0 0 ;
+}
+
+.listss a:nth-of-type(odd):hover {
+    color: #7dd87d;
+    transform: translateX(10px);
+}
+
+.listss a:nth-of-type(even):hover {
+    color: #f54300;
+    transform: translateX(10px);
+}
+
+.hamburger {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 18px;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: inherit;
+    height: 3px;
+    background-color: black;
+    border-radius: 30%;
+    transform: rotate(0);
+    transition: all 0.25s;
+}
+
+.hamburger-middle {
+    transform: translateY(6px);
+}
+
+.hamburger-bottom {
+    transform: translateY(12px);
+}
+
+/* Javascript styling */
+.open .hamburger-top {
+    transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
